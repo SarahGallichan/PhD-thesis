@@ -13,7 +13,7 @@ library(here)
 #################
 
 ##Import and clean data
-Growthcurve <- read.csv(here(".csv"))
+Growthcurve <- read.csv(here("Fig3.2_data.csv"))
 Growthcurve <- janitor::clean_names(Broth_compare)
 
 ## Plot simple scatter plot for colony counts over time
@@ -60,7 +60,7 @@ ggsave(here("Figure3.2_Growthcurve.png"), plot = Growthcurve_plot, device = "png
 #################
 
 ## Import and clean data
-ODvLOG <- read.csv(here(".csv"))
+ODvLOG <- read.csv(here("Fig3.3_data.csv"))
 ODvLOG <- janitor::clean_names(All_broths) 
 
 ## Linear regression
@@ -84,7 +84,7 @@ ggsave(here("Figure3.3_ODvLOG.png"), plot = All_broth_plot, device = "png", scal
 #################
 
 ## Import and clean data
-Broth_compare <- read.csv(here(".csv"))
+Broth_compare <- read.csv(here("Fig3.4_data.csv"))
 Broth_compare <- janitor::clean_names(Broth_compare) 
 
 ## Plot ESBL-EC recovery on agar after pre-enrichment
@@ -107,7 +107,7 @@ ggsave(here("Figure3.4_Broth_compare.pdf"), plot = Broth_compare_plot, device = 
 #################
 
 ## Import and clean data
-Qubit_yield <- read.csv(here(".csv"))
+Qubit_yield <- read.csv(here("Fig3.5_data.csv"))
 Qubit_yield <- janitor::clean_names(R_analysis)
 Qubit_yield <- Qubit_yield %>% mutate(extraction_kit = factor(extraction_kit, levels = c("Boiling", "NEB Monarch", "Lucigen MasterPure", "Promega Wizard", "Qiagen Dneasy", "Zymo Miniprep")))
 
@@ -130,6 +130,7 @@ ggsave("Figure3.5_Qubit_yield_plot.tiff", plot = Qubit_yield_plot, device = "tif
 #################
 
 ## Import and clean data
+Nanodrop.260.230 <- read.csv(here("Fig3.6A_data.csv"))
 Nanodrop.260.230 <- janitor::clean_names(R_analysis)
 Nanodrop.260.230 <- Nanodrop.260.230 %>% mutate(extraction_kit = factor(extraction_kit, levels = c("Boiling", "Lucigen MasterPure", "NEB Monarch", "Promega Wizard", "Qiagen Dneasy", "Zymo Miniprep")))
 
@@ -145,6 +146,7 @@ Nanodrop_260_230_plot <- Nanodrop.260.230 %>% ggplot(aes(extraction_kit, purity,
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1), text = element_text(size=15))
 
 ## Import and clean data
+Nanodrop.260.280 <- read.csv(here("Fig3.6B_data.csv"))
 Nanodrop.260.280 <- janitor::clean_names(R_analysis)
 Nanodrop.260.280 <- Nanodrop.260.280 %>% mutate(extraction_kit = factor(extraction_kit, levels = c("Boiling", "Lucigen MasterPure", "NEB Monarch", "Promega Wizard", "Qiagen Dneasy", "Zymo Miniprep")))
 
