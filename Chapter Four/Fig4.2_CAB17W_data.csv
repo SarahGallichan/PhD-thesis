@@ -1,0 +1,25 @@
+﻿Sample name,Broth,Incubation time,Stool,log(CFU)
+CAB17W,TS,4 hrs,Untreated,6.43
+CAB17W,TS,4 hrs,Untreated,6.88
+CAB17W,TS,4 hrs,Untreated,6.85
+CAB17W,TS,4 hrs,Autoclaved,9.907
+CAB17W,TS,4 hrs,Autoclaved,9.921
+CAB17W,TS,4 hrs,Autoclaved,9.923
+CAB17W,BPW,4 hrs,Untreated,6.43
+CAB17W,BPW,4 hrs,Untreated,6.48
+CAB17W,BPW,4 hrs,Untreated,6.48
+CAB17W,BPW,4 hrs,Autoclaved,9.404
+CAB17W,BPW,4 hrs,Autoclaved,9.510
+CAB17W,BPW,4 hrs,Autoclaved,9.349
+CAB17W,TS,18 hrs,Untreated,7.10
+CAB17W,TS,18 hrs,Untreated,6.85
+CAB17W,TS,18 hrs,Untreated,6.94
+CAB17W,TS,18 hrs,Autoclaved,9.580
+CAB17W,TS,18 hrs,Autoclaved,9.239
+CAB17W,TS,18 hrs,Autoclaved,9.404
+CAB17W,BPW,18 hrs,Untreated,9.02
+CAB17W,BPW,18 hrs,Untreated,9.24
+CAB17W,BPW,18 hrs,Untreated,9.28
+CAB17W,BPW,18 hrs,Autoclaved,9.487
+CAB17W,BPW,18 hrs,Autoclaved,9.572
+CAB17W,BPW,18 hrs,Autoclaved,9.447

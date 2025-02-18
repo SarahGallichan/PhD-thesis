@@ -1,0 +1,25 @@
+﻿Broth,Antibiotic,Incubation time,Isolate,log(CFU)
+TS,No antibiotic,4 hours,NCTC13441,8.56
+TS,No antibiotic,4 hours,NCTC13441,8.38
+TS,No antibiotic,4 hours,NCTC13441,8.52
+TS,Antibiotic added,4 hours,NCTC13441,8.49
+TS,Antibiotic added,4 hours,NCTC13441,8.57
+TS,Antibiotic added,4 hours,NCTC13441,8.47
+BPW,No antibiotic,4 hours,NCTC13441,8.11
+BPW,No antibiotic,4 hours,NCTC13441,7.99
+BPW,No antibiotic,4 hours,NCTC13441,7.87
+BPW,Antibiotic added,4 hours,NCTC13441,7.85
+BPW,Antibiotic added,4 hours,NCTC13441,8.29
+BPW,Antibiotic added,4 hours,NCTC13441,8.24
+TS,No antibiotic,18 hours,NCTC13441,7.18
+TS,No antibiotic,18 hours,NCTC13441,7.45
+TS,No antibiotic,18 hours,NCTC13441,8.40
+TS,Antibiotic added,18 hours,NCTC13441,9.23
+TS,Antibiotic added,18 hours,NCTC13441,9.90
+TS,Antibiotic added,18 hours,NCTC13441,9.90
+BPW,No antibiotic,18 hours,NCTC13441,7.73
+BPW,No antibiotic,18 hours,NCTC13441,7.46
+BPW,No antibiotic,18 hours,NCTC13441,9.41
+BPW,Antibiotic added,18 hours,NCTC13441,9.72
+BPW,Antibiotic added,18 hours,NCTC13441,9.90
+BPW,Antibiotic added,18 hours,NCTC13441,9.90

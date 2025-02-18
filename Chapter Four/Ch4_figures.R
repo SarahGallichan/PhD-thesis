@@ -10,11 +10,13 @@ library(scales)
 #################
 
 ##Import and clean data
-Spike_autoclave_NCTC13441 <- janitor::clean_names(Spiked_experiments_2023)
+Spike_autoclave_NCTC13441 <- read.csv(here("Fig4.2_NCTC13441_data.csv"))
+Spike_autoclave_NCTC13441 <- janitor::clean_names(Spike_autoclave_NCTC13441)
 Spike_autoclave_NCTC13441 <- Spike_autoclave_NCTC13441 %>% mutate(incubation_time = factor(incubation_time, levels = c("4 hrs", "18 hrs")))
 
 ## Create plot of stool spiked with ESBL-EC
-Spike_autoclave_NCTC13441_plot <- Spike_autoclave_NCTC13441 %>% 
+Spike_autoclave_NCTC13441_plot <- 
+  Spike_autoclave_NCTC13441 %>% 
   ggplot(aes(stool, log_cfu, col= stool)) +
   scale_color_manual(values=c('orange','navy'))+
   scale_y_continuous(breaks = seq(5,11,by = 1),
@@ -33,11 +35,13 @@ plot(Spike_autoclave_NCTC13441_plot)
 ggsave("Spike_autoclave_NCTC13441_plot.png", plot = Spike_autoclave_NCTC13441_plot, device = "png", scale =1, width = 20, height = 20, units = "cm", dpi = 300)
 
 ## Import and clean data
+Spike_autoclave_CAB17W <- read.csv(here("Fig4.2_CAB17W_data.csv"))
 Spike_autoclave_CAB17W <- janitor::clean_names(Spiked_experiments_2023)
 Spike_autoclave_CAB17W  <- Spike_autoclave_CAB17W %>% mutate(incubation_time = factor(incubation_time, levels = c("4 hrs", "18 hrs")))
 
 ## Create plot of autoclaved stool spiked with ESBL-EC
-Spike_autoclave_CAB17W_plot <- Spike_autoclave_CAB17W %>% 
+Spike_autoclave_CAB17W_plot <- 
+  Spike_autoclave_CAB17W %>% 
   ggplot(aes(stool, log_cfu, col= stool)) +
   scale_color_manual(values=c('orange','navy'))+
   scale_y_continuous(breaks = seq(5,11,by = 1),
@@ -58,6 +62,10 @@ ggsave("Spike_autoclave_CAB17W_plot.png", plot = Spike_autoclave_CAB17W_plot, de
 #################
 ## Figure 4.3. ##
 #################
+
+Spike_CAB17W <- read.csv(here("Fig4.3_CAB17W_data.csv"))
+Spike_CAB17W <- janitor::clean_names(Spike_CAB17W)
+Spike_CAB17W  <- Spike_CAB17W %>% mutate(incubation_time = factor(incubation_time, levels = c("4 hrs", "18 hrs")))
 
 ## Create plot for spiked stool samples incubated for 4 hours
 Spike_CAB17W <- janitor::clean_names(Spiked_experiments_2023) 
@@ -86,8 +94,12 @@ plot(lm(log_cfu ~ broth + antibiotic, data = Spike_four))
 coef(model_results_four)
 confint(model_results_four)
 
+Spike_NCTC13441 <- read.csv(here("Fig4.3_NCTC13441_data.csv"))
+Spike_NCTC13441 <- janitor::clean_names(Spike_NCTC13441)
+Spike_NCTC13441  <- Spike_CAB17W %>% mutate(incubation_time = factor(incubation_time, levels = c("4 hrs", "18 hrs")))
+
 ## Create plot for spiked stool samples incubated for 18 hours
-Spike_NCTC13441 <- janitor::clean_names(Spiked_experiments_2023) 
+Spike_NCTC13441 <- janitor::clean_names(Spike_NCTC13441) 
 
 Spike_NCTC13441_plot <- Spike_NCTC13441 %>% 
   ggplot(aes(isolate, log_cfu, col= broth)) +
@@ -101,7 +113,7 @@ Spike_NCTC13441_plot <- Spike_NCTC13441 %>%
 
 Spike_NCTC13441_plot
 
-ggsave(here("Figure4.2_Spike_NCTC13441_plot.png"), plot = Spike_NCTC13441_plot, device = "png", scale =1, width = 25, height = 20, units = "cm", dpi = 300)
+ggsave(here("Figure4.3_Spike_NCTC13441_plot.png"), plot = Spike_NCTC13441_plot, device = "png", scale =1, width = 25, height = 20, units = "cm", dpi = 300)
 
 ##Statistical comparison between growth of spiked isolates within two different pre-enrichment with/without antibiotic for spiked stool samples incubated for 18 hours
 
@@ -122,7 +134,8 @@ confint(model_results)
 #################
 
 ##Import and clean data
-LOD <- janitor::clean_names(Spiked_experiments_2023)
+LOD <- read.csv(here("Fig4.4_data.csv"))
+LOD <- janitor::clean_names(LOD)
 
 ## Create plot for lowest detectable limit
 LOD_plot <- LOD %>% ggplot(aes(x= input_log_cfu, y= log_cfu, col = method)) +

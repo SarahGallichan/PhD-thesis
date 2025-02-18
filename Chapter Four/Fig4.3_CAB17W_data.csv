@@ -1,0 +1,25 @@
+﻿Broth,Antibiotic,Incubation time,Isolate,log(CFU)
+TS,No antibiotic,4 hours,CAB17W,6.43
+TS,No antibiotic,4 hours,CAB17W,6.88
+TS,No antibiotic,4 hours,CAB17W,6.85
+TS,Antibiotic added,4 hours,CAB17W,6.64
+TS,Antibiotic added,4 hours,CAB17W,6.73
+TS,Antibiotic added,4 hours,CAB17W,6.85
+BPW,No antibiotic,4 hours,CAB17W,6.43
+BPW,No antibiotic,4 hours,CAB17W,6.48
+BPW,No antibiotic,4 hours,CAB17W,6.48
+BPW,Antibiotic added,4 hours,CAB17W,6.48
+BPW,Antibiotic added,4 hours,CAB17W,6.52
+BPW,Antibiotic added,4 hours,CAB17W,6.60
+TS,No antibiotic,18 hours,CAB17W,7.10
+TS,No antibiotic,18 hours,CAB17W,6.85
+TS,No antibiotic,18 hours,CAB17W,6.94
+TS,Antibiotic added,18 hours,CAB17W,7.12
+TS,Antibiotic added,18 hours,CAB17W,7.20
+TS,Antibiotic added,18 hours,CAB17W,7.26
+BPW,No antibiotic,18 hours,CAB17W,8.56
+BPW,No antibiotic,18 hours,CAB17W,8.49
+BPW,No antibiotic,18 hours,CAB17W,8.68
+BPW,Antibiotic added,18 hours,CAB17W,9.02
+BPW,Antibiotic added,18 hours,CAB17W,9.24
+BPW,Antibiotic added,18 hours,CAB17W,8.83

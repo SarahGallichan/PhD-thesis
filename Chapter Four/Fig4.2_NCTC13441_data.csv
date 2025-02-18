@@ -1,0 +1,25 @@
+﻿Sample name,Broth,Incubation time,Stool,log(CFU)
+NCTC13441,TS,4 hrs,Untreated,8.56
+NCTC13441,TS,4 hrs,Untreated,8.38
+NCTC13441,TS,4 hrs,Untreated,8.52
+NCTC13441,TS,4 hrs,Autoclaved,6.753
+NCTC13441,TS,4 hrs,Autoclaved,6.564
+NCTC13441,TS,4 hrs,Autoclaved,6.778
+NCTC13441,BPW,4 hrs,Untreated,8.11
+NCTC13441,BPW,4 hrs,Untreated,7.99
+NCTC13441,BPW,4 hrs,Untreated,7.87
+NCTC13441,BPW,4 hrs,Autoclaved,6.000
+NCTC13441,BPW,4 hrs,Autoclaved,6.000
+NCTC13441,BPW,4 hrs,Autoclaved,6.000
+NCTC13441,TS,18 hrs,Untreated,7.18
+NCTC13441,TS,18 hrs,Untreated,7.45
+NCTC13441,TS,18 hrs,Autoclaved,6.477
+NCTC13441,TS,18 hrs,Autoclaved,7.067
+NCTC13441,BPW,18 hrs,Untreated,7.73
+NCTC13441,BPW,18 hrs,Untreated,7.46
+NCTC13441,BPW,18 hrs,Untreated,9.41
+NCTC13441,BPW,18 hrs,Autoclaved,7.487
+NCTC13441,BPW,18 hrs,Autoclaved,7.028
+NCTC13441,BPW,18 hrs,Autoclaved,7.386
+,,,,
+,,,,
