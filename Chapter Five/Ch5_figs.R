@@ -9,11 +9,12 @@ library(here)
 #################
 
 ## Import and clean data
-Stool1 <- janitor::clean_names(Braken_species) 
-Stool1 <- Stool1 %>% mutate(species = factor(species, levels = c("Other", "Escherichia coli")))
+Stool1_species <- read.csv(here("Fig5.2_data.csv"))
+Stool1_species <- janitor::clean_names(Stool1_species) 
+Stool1_species <- Stool1_species %>% mutate(species = factor(species, levels = c("Other", "Escherichia coli")))
 
 
-Stool_plot1 <- Stool1 %>% ggplot(aes(x = condition, y = relative_abundance, fill = species, label = reads)) +
+Stool1_species_plot <- Stool1_species %>% ggplot(aes(x = condition, y = relative_abundance, fill = species, label = reads)) +
   geom_col() +
   geom_text(size = 4, position = position_stack(vjust = 0.7)) +
   guides(fill=guide_legend(title="Species")) +
@@ -23,8 +24,8 @@ Stool_plot1 <- Stool1 %>% ggplot(aes(x = condition, y = relative_abundance, fill
   theme_classic() +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1), text = element_text(size=20))
 
-plot(Stool_plot1)
-ggsave("Stool_plot1.png", plot = Stool_plot1, device = "png", scale =1, width = 25, height = 20, units = "cm", dpi = 300)
+plot(Stool1_species_plot)
+ggsave("Stool1_species_plot.png", plot = Stool1_species_plot, device = "png", scale =1, width = 25, height = 20, units = "cm", dpi = 300)
 
 ## Import and clean data
 Stool2 <- janitor::clean_names(Braken_species) 

@@ -1,0 +1,7 @@
+﻿Sample,Species,Condition,Reads,Normalised reads,Relative abundance
+Stool 1,Escherichia coli,Untreated,1585,0.000907134,0.090631193
+Stool 1,Other,Untreated,1747261,153.2281856,99.90936881
+Stool 1,Escherichia coli,4hrs BPW,1200679,0.203702818,16.92301577
+Stool 1,Other,4hrs BPW,5894268,54.45453706,83.07698423
+Stool 1,Escherichia coli,18hrs BPW,4350593,1.230323308,55.16345112
+Stool 1,Other,18hrs BPW,3536138,143.5353954,44.83654888

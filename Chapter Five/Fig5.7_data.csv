@@ -1,0 +1,19 @@
+﻿Broth,Duration,E.coli strain,Relative abundance
+TS,0,ST10,0
+TS,0,ST543,0
+TS,0,Non E. coli,100
+BPW,0,ST10,0
+BPW,0,ST543,0
+BPW,0,Non E. coli,100
+BPW,4,ST10,0
+BPW,4,ST543,0
+BPW,4,Non E. coli,100
+TS,4,ST10,0
+TS,4,ST543,2.421
+TS,4,Non E. coli,97.579
+TS,18,ST10,4.84
+TS,18,ST543,0.821
+TS,18,Non E. coli,94.339
+BPW,18,ST10,5.203
+BPW,18,ST543,0
+BPW,18,Non E. coli,94.797

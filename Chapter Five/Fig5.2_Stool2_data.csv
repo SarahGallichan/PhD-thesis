@@ -1,0 +1,21 @@
+﻿Species,Condition,Reads,Normalised reads,Relative abundance
+Klebsiella pneumoniae,4hrs TS,116391,8.59,12.58
+Klebsiella pneumoniae,4hrs BPW,139255,5.12,15.81
+Klebsiella pneumoniae,18hrs TS,175030,22.62,7.95
+Klebsiella pneumoniae,18hrs BPW,115793,14.27,7.25
+Klebsiella pneumoniae,Raw,1093,0.20,0.07
+Escherichia coli,4hrs TS,14316,1.06,1.55
+Escherichia coli,4hrs BPW,4910,0.18,0.56
+Escherichia coli,18hrs TS,45392,5.87,2.06
+Escherichia coli,18hrs BPW,21928,2.70,1.37
+Escherichia coli,Raw,1975,0.37,0.12
+Other,4hrs TS,588259,43.43,63.57
+Other,4hrs BPW,623541,22.91,70.79
+Other,18hrs TS,784779,101.41,35.66
+Other,18hrs BPW,682501,84.10,42.72
+Other,Raw,1613858,299.31,99.63
+Raoultella planticola,4hrs TS,206355,15.23,22.30
+Raoultella planticola,4hrs BPW,113142,4.16,12.84
+Raoultella planticola,18hrs TS,1195315,154.45,54.32
+Raoultella planticola,18hrs BPW,777235,95.78,48.65
+Raoultella planticola,Raw,2862,0.53,0.18

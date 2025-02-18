@@ -1,0 +1,11 @@
+﻿Species,Condition,Reads,Normalised reads,Relative abundance
+Escherichia coli,4hrs TS,134479,3.63,10.15207082
+Escherichia coli,4hrs BPW,110636,1.61,7.85380491
+Escherichia coli,18hrs TS,1782239,754.23,77.00020306
+Escherichia coli,18hrs BPW,402717,145.44,67.79873028
+Escherichia coli,Raw,2993,0.29,0.204303549
+Other,4hrs TS,1190167,32.16,89.84792918
+Other,4hrs BPW,1298057,18.84,92.14619509
+Other,18hrs TS,532351,225.29,22.99979694
+Other,18hrs BPW,191272,69.08,32.20126972
+Other,Raw,1461984,140.37,99.79569645
