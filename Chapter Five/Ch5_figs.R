@@ -65,6 +65,7 @@ ggsave("Stool_plot3.png", plot = Stool_plot3, device = "png", scale =1, width = 
 ## Figure 5.3. ##
 #################
 
+Stool1_6mil <- read.csv(here("Fig5.3_data.csv"))
 Stool1_6mil <- janitor::clean_names(Braken_species) 
 Stool1_6mil <- Stool1_6mil %>% mutate(species = factor(species, levels = c("Other", "Escherichia coli")))
 
@@ -86,6 +87,7 @@ ggsave("Stool_plot1_6mil.png", plot = Stool_plot1_6mil, device = "png", scale =1
 #################
 
 ##Import and clean data
+Stool1_strains <- read.csv(here("Fig5.4_Stool1_data.csv"))
 Stool1_strains <- janitor::clean_names(Strain_results) 
 Stool1_strains <- Stool1_strains %>% mutate(duration = factor(duration, levels = c("0", "4", "18")))
 
@@ -101,6 +103,7 @@ Stool1_strains_plot <- Stool1_strains %>% ggplot(aes(x = duration, y = relative_
 plot(Stool1_strains_plot)
 
 ##Import and clean data
+Stool3_species <- read.csv(here("Fig5.4_Stool3_data.csv"))
 Stool3_strains <- janitor::clean_names(Strain_results) 
 Stool3_strains <- Stool3_strains %>% mutate(duration = factor(duration, levels = c("0", "4", "18")))
 
@@ -120,6 +123,7 @@ plot(Stool3_strains_plot)
 #################
 
 ##Import and clean data
+Stool1_CoveragevCondition <- read.csv(here("Fig5.5_Stool1_data.csv"))
 Stool1_CoveragevCondition <- janitor::clean_names(Strain_results)
 Stool1_CoveragevCondition <- Stool1_CoveragevCondition %>% mutate(incubation_time = factor(incubation_time, levels = c("4 hours", "18 hours")))
 
@@ -152,6 +156,7 @@ Stool1_Callable
 Stool1_Call_v_cov <- ggarrange(Stool1_Callable, Stool1_Coverage, ncol = 1, nrow = 2, common.legend = TRUE, legend = "right")
 
 ## Import and clean data
+Stool3_CoveragevCondition <- read.csv(here("Fig5.5_Stool3_data.csv"))
 Stool3_CoveragevCondition <- janitor::clean_names(Strain_results)
 Stool3_CoveragevCondition <- Stool3_CoveragevCondition %>% mutate(incubation_time = factor(incubation_time, levels = c("4 hours", "18 hours")))
 
@@ -188,11 +193,13 @@ Stool3_Call_v_cov <- ggarrange(Stool3_Callable, Stool3_Coverage, ncol = 1, nrow 
 #################
 
 ## Import and clean data
+Reference_compare <- read.csv(here("Fig5.6_Refs_data.csv"))
 ref_compare_matrix <- Reference_compare
 as.data.frame(ref_compare_matrix) -> ref_compare_matrix
 rownames(ref_compare_matrix) <- ref_compare_matrix[,1]
 
-phylogroup <- Reference_compare
+Phylogroup <- read.csv(here("Fig5.6_Phylogroup_data.csv"))
+phylogroup <- Phylogroup
 as.data.frame(phylogroup) -> phylogroup
 rownames(phylogroup) <- phylogroup$Reference
 
@@ -206,6 +213,7 @@ ref_heatmap <- pheatmap(ref_compare_matrix,  annotation_row = phylogroup[1], ann
 ## Figure 5.7. ##
 #################
 
+Phylogroup <- read.csv(here("Fig5.7_data.csv"))
 Stool2Klebs_strains <- janitor::clean_names(Strain_results) 
 
 Stool2Klebs_strains <- Stool2Klebs_strains %>% 
